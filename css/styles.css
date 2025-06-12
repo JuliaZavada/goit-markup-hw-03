@@ -11,23 +11,23 @@ ul {
 a {
   text-decoration: none;
 }
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 img {
   display: block;
 }
 
-.container { 
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;  
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 section {
   padding-top: 120px;
@@ -36,12 +36,15 @@ section {
 
 .header {
   background-color: white;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header-nav {
   display: flex;
@@ -68,11 +71,16 @@ section {
   display: flex;
   gap: 40px;
 }
-.header-nav-item-st{}
-.header-nav-item-port{}
-.header-nav-item-cont{}
+.header-nav-item-st {
+}
+.header-nav-item-port {
+}
+.header-nav-item-cont {
+}
 .header-nav-link {
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-nav-list :hover,
 .header-nav-list :focus {
@@ -108,7 +116,6 @@ section {
   padding-top: 188px;
   padding-bottom: 188px;
   max-width: 1158px;
-  
 }
 .main-title {
   font-weight: 700;
@@ -133,9 +140,9 @@ section {
   border-radius: 4px;
   border: none;
   padding: 16px 32px;
-min-width: 169px;
-height: 56px;
- /*margin-top: 48px;*/
+  min-width: 169px;
+  height: 56px;
+  /*margin-top: 48px;*/
 }
 .main-botton:hover,
 .main-botton:focus {
@@ -144,15 +151,25 @@ height: 56px;
 .advantages {
   /*padding-top: 120px;
   padding-bottom: 120px;*/
-  }
-.advantages-title {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantages-list {
   display: flex;
   gap: 24px;
 }
 .advantages-list-item {
-  width: calc( (100% - 24px * 3) / 4);
+  width: calc((100% - 24px * 3) / 4);
 }
 .advantages-item-title {
   font-weight: 500;
@@ -189,8 +206,12 @@ height: 56px;
 }
 .team-list-item {
   background-color: #ffffff;
-  width: calc( (100% - 24px * 3) / 4);
-
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-list-title {
   font-weight: 500;
@@ -207,7 +228,7 @@ height: 56px;
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  margin-bottom: 32px;
+  /*margin-bottom: 32px;*/
 }
 .portfolio {
   /*padding-top: 120px;
@@ -231,10 +252,11 @@ height: 56px;
 }
 .portfolio-list-item {
   margin-bottom: 32px;
-  width: calc( (100% - 24px*2) / 3);
+  width: calc((100% - 24px * 2) / 3);
 }
 .portfolio-text {
   border: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
 }
 .portfolio-list-item-title {
@@ -274,4 +296,4 @@ height: 56px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  }
+}
