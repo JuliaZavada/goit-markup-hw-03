@@ -10,6 +10,7 @@ ul {
 }
 a {
   text-decoration: none;
+  display: block;
 }
 h1,
 h2,
@@ -37,15 +38,15 @@ section {
 .header {
   background-color: white;
   border-bottom: 1px solid #e7e9fc;
-  padding: 0 15px 0 15px;
+  /*padding: 0 15px 0 15px;*/
 }
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
+  /*padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px;*/
 }
 .header-nav {
   display: flex;
